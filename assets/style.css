@@ -56,8 +56,8 @@ a:hover {
 }
 
 .brand {
-  font-family: "Cinzel", serif;
-  font-weight: 600;
+  font-family: "Didot", "Times New Roman", serif;
+  font-weight: 400;
   font-size: 28px;
   color: var(--fg);
   text-decoration: none !important;
