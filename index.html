@@ -5,6 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Zekai Chen</title>
 <meta name="description" content="AI Application Research Engineer at Futurewei Technologies. Master's student in Systems Engineering (Robotics) at Cornell University.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/style.css">
 <meta property="og:title" content="Zekai Chen">
 <meta property="og:description" content="AI Application Research Engineer at Futurewei Technologies. Master's student in Systems Engineering (Robotics) at Cornell University.">
@@ -18,9 +21,8 @@
     <nav class="nav">
       <a class="brand" href="index.html">Zekai Chen</a>
       <div class="menu">
-        <a href="index.html" class="active">Home</a>
-        <a href="papers.html">Papers</a>
-        <a href="https://medium.com/@zekai-chen" target="_blank" rel="noopener">Blog</a>
+        <a href="#papers">Papers</a>
+        <a href="#blogs">Blogs</a>
       </div>
     </nav>
   </div>
@@ -31,8 +33,14 @@
     <img src="assets/profile.jpg" alt="Zekai Chen">
     <div class="intro-content">
       <h1>Zekai Chen</h1>
-      <div class="role">AI Application Research Engineer</div>
-      <div class="affiliation">Futurewei Technologies · Cornell University MEng '25</div>
+      <p>I am an AI Application Research Engineer. I currently work at <a href="https://www.futurewei.com/" target="_blank">Futurewei IC labs</a> (San Jose, CA), focusing on multimodal research, particularly on physical world understanding in robotic vision, physics consistency in video generation, and developing related benchmarks and datasets. I also work on agent systems to improve workflow efficiency while maintaining corporate compliance and data security.</p>
+      
+      <p>From 2024 to 2025, I was at <a href="https://nexaai.com/" target="_blank">Nexa AI</a>, where I co-created on-device model benchmarks (latency, memory usage, power consumption) and researched various RAG pipeline benchmarks, and at <a href="https://www.cuprobotics.org/" target="_blank">Cornell Cup Robotics</a>, where I co-created XRP (open-source desktop educational toy robot).</p>
+      
+      <p>Before that, I was a research assistant at <a href="https://airs.cuhk.edu.cn/" target="_blank">AIRS</a> (Shenzhen, China), where I integrated robots with language models for real-time conversational interaction.</p>
+      
+      <p>I am skilled in paper reproduction, inference testing, and benchmark design; self-taught Isaac Sim simulation; and have replicated models including π0, OpenVLA, and Rekep. I am proficient in scheduling/benchmarking on V100, A100, RTX 4090/5090; experienced in local deployment, debugging, and training of open-source multimodal models. I am enthusiastic about mastering emerging AI tools to expand my skillset and apply them in practical projects.</p>
+      
       <div class="links">
         <a href="assets/ZEKAI_CHEN_CV.pdf" target="_blank">CV</a>
         <a href="https://linkedin.com/in/zekai-chen" target="_blank">LinkedIn</a>
@@ -42,173 +50,17 @@
     </div>
   </div>
 
-  <div class="section">
-    <h2>About</h2>
-    <p>
-      I am an AI Application Research Engineer at <strong>Futurewei Technologies</strong> and a Master's student in Systems Engineering (Robotics) at Cornell University. My research focuses on AI systems, multimodal benchmarks, and applied machine learning in computer vision and robotics.
-    </p>
-    <p>
-      I build practical AI applications and evaluation systems. At Futurewei, I work on neural video reconstruction and physics-consistency benchmarks for fluid video generation. Previously at Nexa AI, I designed RAG and reranker benchmarks and built on-device LLM latency testbeds. At Cornell Cup Robotics, I implement autonomy stacks on iRobot Create and open-source XRP platforms.
-    </p>
-  </div>
-
-  <div class="section">
-    <h2>Experience</h2>
-    
-    <div class="experience-item">
-      <div class="experience-header">
-        <div>
-          <span class="job-title">AI Application Research Intern</span>
-          <span class="company">Futurewei Technologies</span>
-        </div>
-        <span class="date">June 2025 – Present</span>
-      </div>
-      <ul>
-        <li>Co-first Author, <em>High-Fidelity 4x Neural Reconstruction of Real-time Path Traced Videos</em>. ICCV-AIGENS 2025.</li>
-        <li>Designed a physics-consistency benchmark for fluid video generation models, aligning evaluation metrics with human perceptual realism.</li>
-        <li>Built agent systems for workflow automation: generated one-click semiconductor news reports (cutting prep time from ~2h/day to seconds); auto-patched Cortex-A710 erratum in Trusted Firmware with Linaro (reducing manual patch effort by 90%).</li>
-      </ul>
-    </div>
-
-    <div class="experience-item">
-      <div class="experience-header">
-        <div>
-          <span class="job-title">AI Engineer Intern</span>
-          <span class="company">Nexa AI</span>
-        </div>
-        <span class="date">Dec 2024 – May 2025</span>
-      </div>
-      <ul>
-        <li>Designed benchmarks for RAG pipelines & LLM rerankers (jina-reranker-v1/v2, jina-clip-v2, BGE, Qwen2.5-VL), enabling model selection now deployed in the Hyperlink product.</li>
-        <li>Built a cross-platform on-device LLM test-bed (Mac M-series & Windows x86) measuring latency, RAM, and power across FP16/Q8/Q4 models.</li>
-        <li>Shipped a Gradio interface with the Nexa SDK (4.7k stars on GitHub), enabling one-command model demos.</li>
-        <li>Refactored and standardized diverse open-source models, eliminating dynamic ops and improving single-batch inference speed by up to 18%.</li>
-      </ul>
-    </div>
-
-    <div class="experience-item">
-      <div class="experience-header">
-        <div>
-          <span class="job-title">Robot Engineer</span>
-          <span class="company">Cornell Cup Robotics</span>
-        </div>
-        <span class="date">Sep 2024 – Present</span>
-      </div>
-      <ul>
-        <li>Implemented autonomy stack on XRP & iRobot Create (EKF SLAM, RRT/PRM, potential-field local control), achieving <15 cm waypoint error in dynamic mazes.</li>
-        <li>Re-engineered Disney BB-8 on open-source XRP and produced LEGO-compatible variant for rapid algorithm benchmarking.</li>
-      </ul>
-    </div>
-
-    <div class="experience-item">
-      <div class="experience-header">
-        <div>
-          <span class="job-title">Software Engineer Intern</span>
-          <span class="company">Walnut AI</span>
-        </div>
-        <span class="date">July 2024 – Aug 2024</span>
-      </div>
-      <ul>
-        <li>Shipped cross-platform NFC offline transfer (32 KB) via Flutter; developed the WalnutX NFC plugin and integrated it into the Walnut app.</li>
-      </ul>
-    </div>
-
-    <div class="experience-item">
-      <div class="experience-header">
-        <div>
-          <span class="job-title">Research Assistant</span>
-          <span class="company">Shenzhen Institute of AI and Robotics</span>
-        </div>
-        <span class="date">Sep 2023 – May 2024</span>
-      </div>
-      <ul>
-        <li>Built multi-agent LLM "Werewolf" simulation (MetaGPT + GPT-4o) with 6+ agent roles and 10+ simulated games.</li>
-        <li>Integrated Whisper + GPT-4 on Pepper Robot, achieving real-time speech-to-response latency <2s; deployed at Shenzhen Longgang Station (500+ user queries handled).</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="section">
-    <h2>Education</h2>
-    
-    <div class="experience-item">
-      <div class="experience-header">
-        <div>
-          <span class="job-title">Master of Engineering in Systems Engineering (Robotics)</span>
-          <span class="company">Cornell University</span>
-        </div>
-        <span class="date">Dec 2025</span>
-      </div>
-      <p>GPA: 4.0 · Relevant Coursework: NLP & LLMs, Robot Learning, Software Engineering, Autonomous Mobile Robots, Computer Vision</p>
-    </div>
-
-    <div class="experience-item">
-      <div class="experience-header">
-        <div>
-          <span class="job-title">Bachelor of Electronic Information Engineering (First Class Honours)</span>
-          <span class="company">The Chinese University of Hong Kong, Shenzhen</span>
-        </div>
-        <span class="date">May 2024</span>
-      </div>
-      <p>Computer Engineering Track · Machine Learning, Computer Architecture, Operating Systems, Database Systems</p>
-    </div>
-  </div>
-
-  <div class="section">
-    <h2>Skills & Interests</h2>
-    <div class="skills-grid">
-      <div class="skill-category">
-        <h3>Programming & Tools</h3>
-        <p>Python, C++, MATLAB, Git, Linux, AWS, Google Cloud, CUDA, PowerShell</p>
-      </div>
-      <div class="skill-category">
-        <h3>AI & ML Frameworks</h3>
-        <p>PyTorch, HuggingFace, Transformers, LoRA/PEFT, OpenCV, llama.cpp, Gradio</p>
-      </div>
-      <div class="skill-category">
-        <h3>Robotics & Computer Vision</h3>
-        <p>SLAM, EKF, A*/RRT*, Potential Fields, LLM RAG, Quantization; Isaac Sim simulation</p>
-      </div>
-      <div class="skill-category">
-        <h3>Personal Interests</h3>
-        <p>Go game (3-dan level), 1500m National Third-Level Athlete, coffee brewing, hiking</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="section">
-    <h2>Leadership</h2>
-    
-    <div class="experience-item">
-      <div class="experience-header">
-        <div>
-          <span class="job-title">Co-Founder & Co-president</span>
-          <span class="company">Stanford University ASES (GBA Chapter)</span>
-        </div>
-        <span class="date">Nov 2023 – Present</span>
-      </div>
-      <p>Ran Asia Launchpad for 80+ students; mentored 4 startups.</p>
-    </div>
-
-    <div class="experience-item">
-      <div class="experience-header">
-        <div>
-          <span class="job-title">Founder</span>
-          <span class="company">CUHKSZ Alumni Association</span>
-        </div>
-        <span class="date">Sep 2023 – Present</span>
-      </div>
-      <p>Built network of 300+ alumni, launched Entrepreneurship & Zhejiang divisions.</p>
-    </div>
-  </div>
-
-  <div class="section">
-    <h2>Recent Updates</h2>
+  <div class="section" id="papers">
+    <h2>Papers</h2>
     <ul>
-      <li><strong>ICCV-AIGENS 2025:</strong> Co-first author on high-fidelity 4× neural reconstruction for real-time path-traced videos.</li>
-      <li><strong>Fluid Video Benchmark:</strong> Designed a physics-consistency benchmark for fluid video generation; survey in progress.</li>
-      <li><strong>Nexa SDK:</strong> Contributed to open-source project with 4.7k GitHub stars, enabling one-command AI model deployment.</li>
+      <li><strong>High-Fidelity 4× Neural Reconstruction of Real-time Path Traced Videos</strong> (Co-first Author). ICCV-AIGENS 2025.</li>
+      <li><strong>Physics-Consistency Benchmark for Fluid Video Generation</strong> (Producing)</li>
     </ul>
+  </div>
+
+  <div class="section" id="blogs">
+    <h2>Blogs</h2>
+    <p>Producing</p>
   </div>
 </main>
 
