@@ -57,7 +57,7 @@ a:hover {
 
 .brand {
   font-weight: 600;
-  font-size: 18px;
+  font-size: 24px;
   color: var(--fg);
   text-decoration: none !important;
 }
@@ -65,7 +65,7 @@ a:hover {
 .menu {
   display: flex;
   gap: 24px;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .menu a {
