@@ -56,7 +56,7 @@ a:hover {
 }
 
 .brand {
-  font-family: "Trajan Pro", "Cinzel", serif;
+  font-family: "Cinzel", serif;
   font-weight: 600;
   font-size: 28px;
   color: var(--fg);
