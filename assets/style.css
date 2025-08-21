@@ -192,6 +192,10 @@ main {
   color: var(--fg);
 }
 
+.section strong {
+  font-weight: 700;
+}
+
 .section p {
   margin: 0 0 12px 0;
   line-height: 1.7;
