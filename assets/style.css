@@ -6,7 +6,7 @@
   --light-muted: #999;
   --link: #0066cc;
   --bg: #fff;
-  --maxw: 900px;
+  --maxw: 1000px;
 }
 
 * {
@@ -40,7 +40,7 @@ a:hover {
 .container {
   max-width: var(--maxw);
   margin: 0 auto;
-  padding: 0 16px;
+  padding: 0 12px;
 }
 
 .header {
@@ -125,6 +125,7 @@ main {
   padding: 8px 16px;
   background: #f8f9fa;
   font-size: 14px;
+  color: #000;
   transition: all 0.2s ease;
   display: flex;
   align-items: center;
