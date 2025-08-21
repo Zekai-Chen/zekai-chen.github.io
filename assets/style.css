@@ -1,37 +1,260 @@
 
-/* Jason-Wei-like minimal academic aesthetic */
-:root{
-  --fg:#111; --muted:#4a4a4a; --link:#111; --bg:#fff; --maxw:760px;
+/* Jason-Wei-inspired minimal academic design */
+:root {
+  --fg: #222;
+  --muted: #666;
+  --light-muted: #999;
+  --link: #0066cc;
+  --bg: #fff;
+  --maxw: 800px;
 }
-*{box-sizing:border-box}
-html{font-size:18px}
-body{
-  margin:0; padding:0; background:var(--bg); color:var(--fg);
-  font-family: 'Crimson Text', Georgia, 'Times New Roman', serif;
-  line-height:1.7;
-  text-rendering:optimizeLegibility; -webkit-font-smoothing:antialiased;
+
+* {
+  box-sizing: border-box;
 }
-a{color:var(--link); text-decoration:none; border-bottom:1px solid transparent}
-a:hover{border-bottom-color:#bbb}
-.container{max-width:var(--maxw); margin:0 auto; padding:0 22px}
-.header{position:sticky; top:0; background:rgba(255,255,255,0.9); backdrop-filter:saturate(180%) blur(6px);}
-.nav{display:flex; align-items:center; justify-content:space-between; padding:18px 0}
-.brand{font-weight:700; letter-spacing:.2px; font-size:20px}
-.menu{display:flex; gap:20px; font-size:16px}
-.menu a{opacity:.9}
-.menu a.active{opacity:1; font-weight:600}
-main{padding:36px 0 56px 0}
-.hero{display:flex; align-items:flex-start; gap:24px; margin-bottom:10px}
-.hero img{width:120px; height:120px; border-radius:50%; object-fit:cover}
-h1,h2,h3{font-weight:700; line-height:1.25; margin:0 0 6px 0}
-h1{font-size:28px}
-h2{font-size:20px; margin-top:26px}
-p{margin:10px 0}
-.muted{color:var(--muted)}
-.badges{display:flex; gap:14px; flex-wrap:wrap; margin:14px 0 0 0}
-.badges a{padding:4px 0}
-.section{margin-top:20px}
-ul.list{list-style:disc; padding-left:20px; margin:8px 0}
-.footer{color:#888; font-size:14px; padding:20px 0 40px 0}
-/* Narrower on very small screens */
-@media (max-width:520px){ html{font-size:17px} .hero{flex-direction:column} .hero img{width:96px;height:96px} }
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.header {
+  border-bottom: 1px solid #eee;
+  margin-bottom: 40px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.brand {
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--fg);
+}
+
+.menu {
+  display: flex;
+  gap: 24px;
+  font-size: 16px;
+}
+
+.menu a {
+  color: var(--muted);
+  transition: color 0.2s ease;
+}
+
+.menu a:hover,
+.menu a.active {
+  color: var(--fg);
+}
+
+main {
+  padding-bottom: 60px;
+}
+
+.intro {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 40px;
+  align-items: flex-start;
+}
+
+.intro img {
+  width: 160px;
+  height: 160px;
+  border-radius: 8px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.intro-content h1 {
+  font-size: 32px;
+  font-weight: 600;
+  margin: 0 0 8px 0;
+  line-height: 1.2;
+}
+
+.intro-content .role {
+  font-size: 18px;
+  color: var(--muted);
+  margin-bottom: 16px;
+}
+
+.intro-content .affiliation {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.links {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.links a {
+  padding: 6px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.links a:hover {
+  border-color: var(--link);
+  background: #f8f9fa;
+  text-decoration: none;
+}
+
+.section {
+  margin-bottom: 40px;
+}
+
+.section h2 {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 0 0 20px 0;
+  color: var(--fg);
+}
+
+.section p {
+  margin: 0 0 16px 0;
+  line-height: 1.7;
+}
+
+.experience-item {
+  margin-bottom: 24px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.experience-item:last-child {
+  border-bottom: none;
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 8px;
+}
+
+.job-title {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.company {
+  color: var(--muted);
+  margin-left: 8px;
+}
+
+.date {
+  color: var(--light-muted);
+  font-size: 14px;
+  flex-shrink: 0;
+}
+
+.experience-item ul {
+  margin: 8px 0 0 0;
+  padding-left: 20px;
+}
+
+.experience-item li {
+  margin-bottom: 6px;
+  line-height: 1.6;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.skill-category {
+  margin-bottom: 16px;
+}
+
+.skill-category h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 0 8px 0;
+  color: var(--fg);
+}
+
+.skill-category p {
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.footer {
+  color: var(--light-muted);
+  font-size: 14px;
+  text-align: center;
+  padding: 40px 0;
+  border-top: 1px solid #f0f0f0;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  html {
+    font-size: 15px;
+  }
+  
+  .container {
+    padding: 0 20px;
+  }
+  
+  .intro {
+    flex-direction: column;
+    gap: 24px;
+  }
+  
+  .intro img {
+    width: 120px;
+    height: 120px;
+    align-self: center;
+  }
+  
+  .intro-content h1 {
+    font-size: 28px;
+  }
+  
+  .experience-header {
+    flex-direction: column;
+    gap: 4px;
+  }
+  
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+}
