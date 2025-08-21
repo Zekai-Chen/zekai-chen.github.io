@@ -6,7 +6,7 @@
   --light-muted: #999;
   --link: #0066cc;
   --bg: #fff;
-  --maxw: 800px;
+  --maxw: 900px;
 }
 
 * {
@@ -14,7 +14,7 @@
 }
 
 html {
-  font-size: 16px;
+  font-size: 18px;
 }
 
 body {
@@ -40,7 +40,7 @@ a:hover {
 .container {
   max-width: var(--maxw);
   margin: 0 auto;
-  padding: 0 24px;
+  padding: 0 16px;
 }
 
 .header {
@@ -116,22 +116,53 @@ main {
 
 .links {
   display: flex;
-  gap: 20px;
+  gap: 0;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .links a {
-  padding: 6px 12px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
+  padding: 8px 16px;
+  background: #f8f9fa;
   font-size: 14px;
   transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  position: relative;
+}
+
+.links a:not(:last-child)::after {
+  content: "|";
+  position: absolute;
+  right: -1px;
+  color: #ddd;
+  font-weight: normal;
 }
 
 .links a:hover {
-  border-color: var(--link);
-  background: #f8f9fa;
+  background: #e9ecef;
   text-decoration: none;
+}
+
+.links a::before {
+  font-size: 16px;
+}
+
+.links a[href*="ZEKAI_CHEN_CV.pdf"]::before {
+  content: "📄";
+}
+
+.links a[href*="linkedin"]::before {
+  content: "💼";
+}
+
+.links a[href*="github"]::before {
+  content: "💻";
+}
+
+.links a[href*="mailto"]::before {
+  content: "📧";
 }
 
 .section {
