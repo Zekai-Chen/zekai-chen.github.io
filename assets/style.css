@@ -296,6 +296,11 @@ main {
     font-size: 28px;
   }
   
+  .section {
+    margin-left: 0;
+    margin-bottom: 30px;
+  }
+  
   .experience-header {
     flex-direction: column;
     gap: 4px;
@@ -303,5 +308,14 @@ main {
   
   .skills-grid {
     grid-template-columns: 1fr;
+  }
+  
+  .links {
+    justify-content: center;
+  }
+  
+  .links a {
+    font-size: 12px;
+    padding: 6px 12px;
   }
 }
