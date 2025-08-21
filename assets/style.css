@@ -145,24 +145,32 @@ main {
   text-decoration: none;
 }
 
-.links a::before {
+.links a i {
   font-size: 16px;
 }
 
-.links a[href*="ZEKAI_CHEN_CV.pdf"]::before {
-  content: "📄";
+.links a[href*="ZEKAI_CHEN_CV.pdf"] i::before {
+  content: "\f1c1";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
 }
 
-.links a[href*="linkedin"]::before {
-  content: "💼";
+.links a[href*="linkedin"] i::before {
+  content: "\f08c";
+  font-family: "Font Awesome 6 Brands";
+  font-weight: 400;
 }
 
-.links a[href*="github"]::before {
-  content: "💻";
+.links a[href*="github"] i::before {
+  content: "\f09b";
+  font-family: "Font Awesome 6 Brands";
+  font-weight: 400;
 }
 
-.links a[href*="mailto"]::before {
-  content: "📧";
+.links a[href*="mailto"] i::before {
+  content: "\f0e0";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
 }
 
 .section {
