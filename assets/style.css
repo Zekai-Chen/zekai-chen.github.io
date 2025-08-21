@@ -59,6 +59,7 @@ a:hover {
   font-weight: 600;
   font-size: 18px;
   color: var(--fg);
+  text-decoration: none !important;
 }
 
 .menu {
@@ -70,6 +71,7 @@ a:hover {
 .menu a {
   color: var(--muted);
   transition: color 0.2s ease;
+  text-decoration: none !important;
 }
 
 .menu a:hover,
