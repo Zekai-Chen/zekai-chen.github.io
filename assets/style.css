@@ -177,7 +177,7 @@ main {
 
 .section {
   margin-bottom: 40px;
-  padding: 0 220px 0 0;
+  margin-left: 220px;
 }
 
 .section h2 {
